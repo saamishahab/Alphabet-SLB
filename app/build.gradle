@@ -40,4 +40,15 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.amitshekhar.android:jackson-android-networking:1.0.2'
+
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+
+    // Permission
+    implementation 'com.nabinbhandari.android:permissions:3.8'
+    //Update Playstore
+    implementation 'org.jsoup:jsoup:1.13.1'
+    //permission
+    implementation 'com.karumi:dexter:6.2.2'
 }
