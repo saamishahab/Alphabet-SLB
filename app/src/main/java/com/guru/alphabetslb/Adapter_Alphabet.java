@@ -71,38 +71,38 @@ public class Adapter_Alphabet extends RecyclerView.Adapter<Adapter_Alphabet.MyVi
         final Provider_Alphabet item = assList.get(position);
         holder.binding.alphaImg.setImageResource(item.getAlpha_img());
 
-        holder.binding.alphaImg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                variable.alertDialog(mActivity, true, true, "Reservasi atas nama "+item.getNama().toUpperCase()+" akan segera dimulai.", "Proses", "Tidak", new GlobalVariable.DialogSingleButtonListener() {
-                    @Override
-                    public void onButtonClicked(int id) {
-                        if(id>0)
-                        {
-                            AlertDialog alertDialog = new AlertDialog.Builder(mActivity).create();
-                            alertDialog.setMessage("Mohon konfirmasi kembali, apakah benar reservasi atas nama "+item.getNama().toUpperCase()+" ?");
-                            alertDialog.setCancelable(false);
-                            alertDialog.setCanceledOnTouchOutside(false);
-                            alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Ya",
-                                    new DialogInterface.OnClickListener() {
-                                        public void onClick(DialogInterface dialog, int which) {
-                                            dialog.dismiss();
-
-//                                            updateCheckStatus("Dining",item.getId_trans());
-                                        }
-                                    });
-                            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Tidak",
-                                    new DialogInterface.OnClickListener() {
-                                        public void onClick(DialogInterface dialog, int which) {
-                                            dialog.dismiss();
-                                        }
-                                    });
-                            alertDialog.show();
-                        }
-                    }
-                });
-            }
-        });
+//        holder.binding.alphaImg.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                variable.alertDialog(mActivity, true, true, "Reservasi atas nama "+item.getNama().toUpperCase()+" akan segera dimulai.", "Proses", "Tidak", new GlobalVariable.DialogSingleButtonListener() {
+//                    @Override
+//                    public void onButtonClicked(int id) {
+//                        if(id>0)
+//                        {
+//                            AlertDialog alertDialog = new AlertDialog.Builder(mActivity).create();
+//                            alertDialog.setMessage("Mohon konfirmasi kembali, apakah benar reservasi atas nama "+item.getNama().toUpperCase()+" ?");
+//                            alertDialog.setCancelable(false);
+//                            alertDialog.setCanceledOnTouchOutside(false);
+//                            alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Ya",
+//                                    new DialogInterface.OnClickListener() {
+//                                        public void onClick(DialogInterface dialog, int which) {
+//                                            dialog.dismiss();
+//
+////                                            updateCheckStatus("Dining",item.getId_trans());
+//                                        }
+//                                    });
+//                            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Tidak",
+//                                    new DialogInterface.OnClickListener() {
+//                                        public void onClick(DialogInterface dialog, int which) {
+//                                            dialog.dismiss();
+//                                        }
+//                                    });
+//                            alertDialog.show();
+//                        }
+//                    }
+//                });
+//            }
+//        });
 
     }
 
